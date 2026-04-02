@@ -146,6 +146,7 @@
     /* Galeria de fotos */
     .viveiro-galeria {
       margin-bottom: 56px;
+      margin: 10px;
     }
     .viveiro-galeria h2 {
       font-size: 20px;
@@ -174,14 +175,9 @@
     }
     .galeria-foto {
       width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      gap: 8px;
-      font-size: 32px;
-      border: 0.5px solid var(--border);
+  height: 100%;
+  object-fit: cover;        /* recorta a imagem para preencher o espaço */
+  object-position: center;  /* ← AQUI você controla o enquadramento */
     }
     .galeria-foto .foto-label {
       font-size: 10px;
@@ -200,6 +196,7 @@
     /* Pilares / diferenciais */
     .viveiro-diferenciais {
       margin-bottom: 56px;
+      margin: 10px;
     }
     .viveiro-diferenciais h2 {
       font-size: 20px;
@@ -287,6 +284,7 @@
     /* Estrutura / Estufa */
     .viveiro-estrutura {
       margin-bottom: 40px;
+      margin: 10px;
     }
     .viveiro-estrutura h2 {
       font-size: 20px;
@@ -433,7 +431,7 @@
   <!-- HERO -->
   <div class="viveiro-hero">
     <div class="viveiro-hero-img">
-      <div class="viveiro-hero-emoji">🌱</div>
+        <img src="img/foto9.png" alt=fotodoviveiro width="100%">
     </div>
     <div class="viveiro-hero-overlay"></div>
     <div class="viveiro-hero-text">
@@ -454,10 +452,7 @@
         <p>A produção em estufa, com porta-enxertos certificados e técnicas modernas de enxertia, resulta em mudas mais resistentes, uniformes e prontas para produzir mais rápido.</p>
       </div>
       <div class="viveiro-intro-img">
-        <div class="photo-placeholder">
-          <div class="photo-placeholder-emoji">🪴</div>
-          <div class="photo-placeholder-label">Foto da entrada do viveiro<br/><span style="opacity:0.6">(substitua pela sua foto)</span></div>
-          <span class="photo-placeholder-tag">📷 Substituir foto</span>
+        <img src="img/foto8.jpg" alt="fotodaproducao" class="galeria-foto">
         </div>
       </div>
     </div>
@@ -465,41 +460,35 @@
     <!-- GALERIA -->
     <div class="viveiro-galeria">
       <h2>Galeria do viveiro</h2>
-      <div class="viveiro-galeria-sub">Espaço, produção e estrutura — substitua pelas suas fotos reais</div>
+      <div class="viveiro-galeria-sub">Espaço, produção e estrutura</div>
       <div class="galeria-grid">
 
         <div class="galeria-item">
           <div class="galeria-foto gf-1">
-            <span>🏡</span>
-            <span class="foto-label">Vista geral do viveiro</span>
+            <img src="img/foto7.jpg" alt="fotoenxertando" class="galeria-foto">
           </div>
         </div>
 
         <div class="galeria-item">
           <div class="galeria-foto gf-2">
-            <span>🌿</span>
-            <span class="foto-label">Estufa de produção</span>
+            <img src="img/foto13.jpg" alt="fotobancadas" class="galeria-foto">
           </div>
         </div>
 
         <div class="galeria-item">
           <div class="galeria-foto gf-3">
-            <span>🍊</span>
-            <span class="foto-label">Mudas cítricas</span>
+            <img src="img/foto1.jpg" alt="fotoramas" class="galeria-foto">
           </div>
         </div>
 
         <div class="galeria-item">
           <div class="galeria-foto gf-4">
-            <span>🌸</span>
-            <span class="foto-label">Ornamentais</span>
+            <img src="img/foto5.jpg" alt="mudasnarua" class="galeria-foto">
           </div>
         </div>
 
         <div class="galeria-item">
-          <div class="galeria-foto gf-5">
-            <span>🌱</span>
-            <span class="foto-label">Processo de enxertia</span>
+          <img src="img/foto6.jpg" alt="mudasbancada" class="galeria-foto">
           </div>
         </div>
 
@@ -556,8 +545,8 @@
 
         <div class="diferencial-card">
           <div class="diferencial-icon">🚚</div>
-          <div class="diferencial-titulo">Atendimento regional</div>
-          <div class="diferencial-desc">Atendemos Rio d'Oeste e toda a região do Alto Vale do Itajaí, com entrega mediante combinação.</div>
+          <div class="diferencial-titulo">Amplo Atendimento</div>
+          <div class="diferencial-desc">Atendemos toda a região sul, com entrega mediante a negociação.</div>
         </div>
 
       </div>
@@ -581,7 +570,7 @@
           <div class="estrutura-item-icon">💧</div>
           <div>
             <div class="estrutura-item-title">Sistema de irrigação</div>
-            <div class="estrutura-item-desc">Irrigação por gotejamento que garante uniformidade hídrica e reduz o desperdício de água.</div>
+            <div class="estrutura-item-desc">Fertirrigação que garante uniformidade hídrica e reduz o desperdício de água.</div>
           </div>
         </div>
 
@@ -597,7 +586,7 @@
           <div class="estrutura-item-icon">📦</div>
           <div>
             <div class="estrutura-item-title">Área de expedição</div>
-            <div class="estrutura-item-desc">Separação e embalagem cuidadosa para transporte, com proteção das raízes e caule das mudas.</div>
+            <div class="estrutura-item-desc">Separação e preparação das mudas para transporte, com proteção das raízes e caule das mudas.</div>
           </div>
         </div>
 
@@ -630,7 +619,7 @@
         <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
         <circle cx="12" cy="10" r="3"/>
       </svg>
-      Rio d'Oeste, SC
+      Desenvolvido Por  <a href="https://wa.me/5547988739362" target="_blank">Magnatto Digital</a>
     </div>
   </footer>
 
